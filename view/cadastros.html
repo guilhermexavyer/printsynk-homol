@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Cópias</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/modal/modal.css">
     <link rel="stylesheet" href="../assets/css/preview/componentes.css">
+    <link rel="stylesheet" href="../assets/css/cadastros.css">
 </head>
 <body>
     <div class="container-menu">
@@ -45,7 +46,7 @@
                 <div class="categoria-menu">
                     <h5>Administração do Sistema</h5>
 
-                    <a href="cadastros.html" class="menu-item">
+                    <a href="" class="menu-item pagina-ativa">
                         <div>
                             <i class="fa-solid fa-book"></i>Cadastros
                         </div>
@@ -77,14 +78,59 @@
         </div>
         
         <div class="conteudo-principal">
-            <img src="../assets/img/PrintSynk - Logo + Nome.png" alt="" width="100px">
+            <div class="conteudo-topo">
+                <select name="" id="pasta_pagina">
+                    <option value="disciplina">Disciplina</option>
+                    <option value="funcionario">Funcionário</option>
+                    <option value="turma">Turma</option>
+                    <option value="usuario">Usuário</option>
+                </select>
+            </div>
+
+            <div class="conteudo-pagina">
+                <div class="tipo-pagina disciplina">
+                    <div class="tipo-pagina-flex">
+                        <div>
+                            <div>
+                                <h3>Cadastro de Disciplina</h3>
+                                <hr>
+                            </div>
+                            <form action="">
+                                <div class="campo">
+                                    <div>
+                                        <label for="">Nome</label>
+                                        <i title="Teste" class="fa-solid fa-circle-info"></i>
+                                    </div>
+                                    <input type="text" name="" id="">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="tipo-pagina-rodape">
+                            <button class="botao-principal">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tipo-pagina funcionario">
+                    <h3>Cadastro de Funcionário</h3>
+                    <hr>
+                </div>
+
+                <div class="tipo-pagina turma">
+                    <h3>Cadastro de Turma</h3>
+                    <hr>
+                </div>
+
+                <div class="tipo-pagina usuario">
+                    <h3>Cadastro de Usuário</h3>
+                    <hr>
+                </div>
+            </div>
         </div>
+        
     </main>
     
-
-
-
-
     <!-- Modal Cabeçalho -->
     <div class="modal" id="modal_cabecalho" >
         <div class="modal-conteudo">
@@ -110,12 +156,9 @@
         </div>
     </div>
 
-
-
-
-
     <script src="../assets/js/janela/janela_tipo_ambiente.js"></script>
     <script src="../assets/js/modal/modal_cabecalho.js"></script>
     <script src="../assets/js/modal/modal_sair.js"></script>
+    <script src="../assets/js/pasta_pagina.js"></script>
 </body>
 </html>

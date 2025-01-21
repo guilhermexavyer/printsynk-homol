@@ -1,5 +1,15 @@
 @import url(../root.css);
 
+.preview-componentes {
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+
 /* Descrição */
 label {
     color: var(--cor-fonte-label);
@@ -46,6 +56,22 @@ textarea:disabled {
     opacity: 1;
 }
 
+.input-checkbox {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    box-shadow: none;
+    cursor: pointer;
+    margin-right: 5px;
+
+    width: 17px;
+    height: 17px;
+}
+
 input[type="date"],
 input[type="datetime-local"] {
     cursor: pointer;
@@ -79,7 +105,7 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-    padding: 3px 6px;
+    padding: 6px 6px;
     text-decoration: none;
     text-transform: uppercase;
     transition: .1s;
@@ -105,7 +131,7 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
-    padding: 3px 6px;
+    padding: 6px 6px;
     text-decoration: none;
     text-transform: uppercase;
     transition: .1s;

@@ -1,0 +1,45 @@
+.conteudo-principal {
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-topo {
+    display: flex;
+    justify-content: start;
+    
+    margin-bottom: 10px;
+
+    width: 100%;
+}
+
+.tipo-pagina {
+    display: none; /* Inicialmente, todas as divs estão ocultas */
+}
+
+.conteudo-pagina {
+    background-color: var(--cor-background-principal-1);
+    box-shadow: var(--sombra-container);
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.tipo-pagina {
+    height: 100%;
+}
+
+.tipo-pagina-flex {
+    height: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tipo-pagina-rodape {
+    display: flex;
+    justify-content: end;
+}
