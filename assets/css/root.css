@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    /* --------------- EDITAR HTML --------------- */
+    
+    --cor-principal-1: #4e73df;
+    --cor-principal-2: #224abe;
+
+    --cor-background-principal-1: #fff;
+    --cor-background-principal-2: #eee;
+    --cor-background-modal: rgba(0, 0, 0, 0.300);
+
+    --cor-fonte-branca: #fff;
+    --cor-fonte-cinza: #ddd;
+    --cor-fonte-preta: #000;
+    --cor-fonte-label: #555;
+    --cor-fonte-icone: #bbb;
+    --cor-fonte-icone-hover: #999;
+
+    --cor-input: 1px solid #bbb;
+    --cor-input-foco-var: #7799ff;
+    --cor-input-foco: 1px solid var(--cor-input-foco-var);
+    --cor-input-bloqueado: #eee;
+
+    --cor-botao-principal: var(--cor-principal-2);
+    --cor-botao-principal-foco: #11276b;
+    --cor-botao-secundario: #ddd;
+    --cor-botao-secundario-foco: #bbb;
+
+    --cor-ancora: var(--cor-principal-2);
+
+    
+    --cor-etiqueta-homol: #ffc935;
+    --cor-etiqueta-prod: #16d616;
+
+    --sombra-container: 0px 5px 10px rgba(0, 0, 0, 0.300);
+    --sombra-modal: 0px 5px 10px rgba(0, 0, 0, 0.300);
+    --sombra-input: 1px 1px 1px #ccc;
+    --sombra-input-foco: 1px 1px 1px var(--cor-input-foco-var);
+    --sombra-botao: 1px 1px 1px #bbb;
+    --sombra-botao-foco: 1px 1px 1px #aaa;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Nunito", serif;
+    margin: 0;
+    padding: 0;
+}

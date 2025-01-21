@@ -1,0 +1,41 @@
+@import url(../root.css);
+
+body {
+    background: linear-gradient(var(--cor-principal-1), var(--cor-principal-2));
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tipo-ambiente {
+    background-color: var(--cor-background-principal-1);
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 70%;
+}
+
+.container-tipo-ambiente h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-tipo-ambiente p {
+    text-align: justify;
+}
+
+.destaque {
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.destaque-1 {
+    background-color: var(--cor-etiqueta-homol);
+}
+
+.destaque-2 {
+    background-color: red;
+    color: var(--cor-fonte-branca);
+}

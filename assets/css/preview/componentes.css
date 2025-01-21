@@ -1,0 +1,159 @@
+@import url(../root.css);
+
+/* Descrição */
+label {
+    color: var(--cor-fonte-label);
+}
+
+i {
+    color: var(--cor-fonte-icone);
+    cursor: pointer;
+}
+
+i:hover {
+    color: var(--cor-fonte-icone-hover);
+    cursor: pointer;
+}
+
+
+
+/* Campos */
+input,
+select,
+textarea {
+    border: var(--cor-input);
+    padding: 5px;
+    box-shadow: var(--sombra-input);
+    outline: none;
+}
+
+select {
+    cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: var(--cor-input-foco);
+    box-shadow: var(--sombra-input-foco);
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+    background-color: var(--cor-input-bloqueado);
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+input[type="date"],
+input[type="datetime-local"] {
+    cursor: pointer;
+}
+
+input[type="date"]:disabled,
+input[type="datetime-local"]:disabled {
+    cursor: not-allowed;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:focus,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator:focus,
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
+    background-color: var(--cor-botao-secundario);
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    transition: .1s;
+}
+
+
+
+/* Botões */
+.botao-principal {
+    background-color: var(--cor-botao-principal);
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--sombra-botao);
+    color: var(--cor-fonte-branca);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .1s;
+}
+
+.botao-principal:active,
+.botao-principal:focus {
+    outline: 2px solid var(--cor-botao-principal-foco);
+    outline-offset: 3px;
+}
+
+.botao-principal:hover {
+    background-color: var(--cor-botao-principal-foco);
+    box-shadow: var(--sombra-botao-foco);
+}
+
+.botao-secundario {
+    background-color: var(--cor-botao-secundario);
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--sombra-botao);
+    color: var(--cor-fonte-preta);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .1s;
+}
+
+.botao-secundario:active,
+.botao-secundario:focus {
+    outline: 2px solid var(--cor-botao-secundario-foco);
+    outline-offset: 3px;
+}
+
+.botao-secundario:hover {
+    background-color: var(--cor-botao-secundario-foco);
+    box-shadow: var(--sombra-botao-foco);
+}
+
+.botao-busca {
+    background-color: var(--cor-fonte-branca);
+    border: var(--cor-input);
+    box-shadow: var(--sombra-input);
+    color: var(--cor-fonte-icone);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 3px 6px;
+}
+
+.botao-busca:focus i,
+.botao-busca:hover i {
+    color: var(--cor-fonte-icone-hover);
+}
+
+.botao-busca:active,
+.botao-busca:focus {
+    border: var(--cor-input-foco);
+    box-shadow: var(--sombra-input-foco);
+    color: var(--cor-fonte-icone-hover);
+    outline: none;
+}
+
+.botao-busca:disabled,
+.botao-busca:disabled i {
+    background-color: var(--cor-input-bloqueado);
+    color: var(--cor-fonte-icone);
+    cursor: not-allowed;
+}
+
+.botao-busca:disabled:active,
+.botao-busca:disabled:focus {
+    border: var(--cor-input);
+    box-shadow: var(--sombra-botao);
+}

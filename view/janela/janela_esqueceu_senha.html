@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a senha</title>
+
+    <link rel="stylesheet" href="../../assets/css/janela/janela_esqueceu_senha.css">
+    <link rel="stylesheet" href="../../assets/css/modal/modal.css">
+    <link rel="stylesheet" href="../../assets/css/preview/componentes.css">
+</head>
+<body>
+    <div class="container-esqueceu-senha">
+        <h3>Recuperar Senha</h3>
+        <form action="" class="formulario-esqueceu-senha">
+            <input type="email" placeholder="E-mail">
+            <button type="submit" id="modalRecuperarSenha">Recuperar</button>
+        </form>
+        <a href="" id="modalEsqueceuSenha">Não deu certo?</a>
+    </div>
+
+    <!-- Modal Não deu Certo -->
+    <div class="modal" id="modal_esqueceu_senha">
+        <div class="modal-conteudo">
+            <p>
+                Caso não seja possível recuperar sua senha, entre em contato
+                com a equipe de TI pelo e-mail <strong>suporte@empresa.com</strong> ou pelo telefone
+                <strong>(XX) XXXX-XXXX</strong>.
+            </p>
+            <div class="modal-rodape">
+                <button class="modal-fechar botao-principal" id="modal_fechar_esqueceu_senha">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Recuperar Senha -->
+    <div class="modal" id="modal_recuperar_senha">
+        <div class="modal-conteudo">
+            <p>
+                Enviamos um e-mail para o endereço informado.
+                Verifique sua caixa de entrada (ou a pasta de spam, se necessário)
+                e siga as instruções para recuperar o acesso. Caso não receba o
+                e-mail em alguns minutos, tente novamente ou entre em contato com
+                a equipe de TI.
+            </p>
+            <div class="modal-rodape">
+                <button class="modal-fechar botao-principal" id="modal_fechar_recuperar_senha">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../assets/js/modal/modal_esqueceu_senha.js"></script>
+    <script src="../../assets/js/modal/modal_recuperar_senha.js"></script>
+</body>
+</html>

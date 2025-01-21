@@ -1,0 +1,82 @@
+@import url(root.css);
+
+body {
+    background: linear-gradient(var(--cor-principal-1), var(--cor-principal-2));
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login {
+    background-color: var(--cor-background-principal-1);
+    border-radius: 2px;
+    box-shadow: var(--sombra-container);
+    padding: 20px;
+}
+
+.imagem-login {
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container-login a {
+    color: var(--cor-ancora);
+    outline: none;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container-login a:focus,
+.container-login a:hover,
+.container-login a:visited {
+    text-decoration: underline;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-login input,
+.formulario-login button {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+.formulario-login input {
+    border: var(--cor-input);
+    box-shadow: var(--sombra-input);
+    outline: none;
+}
+
+.formulario-login input:focus {
+    border: var(--cor-input-foco);
+    box-shadow: var(--sombra-input-foco);
+}
+
+.formulario-login button {
+    background: var(--cor-botao-principal);
+    border: none;
+    box-shadow: var(--sombra-botao);
+    color: var(--cor-fonte-branca);
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    text-transform: uppercase;
+    transition: .1s;
+}
+
+.formulario-login button:focus, .formulario-login button:hover {
+    background: var(--cor-botao-principal-foco);
+    border: none;
+    box-shadow: var(--sombra-botao-foco);
+}

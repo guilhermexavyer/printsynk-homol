@@ -1,0 +1,80 @@
+@import url(../root.css);
+
+body {
+    background: linear-gradient(var(--cor-principal-1), var(--cor-principal-2));
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-esqueceu-senha {
+    background-color: var(--cor-background-principal-1);
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.container-esqueceu-senha h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-esqueceu-senha a {
+    color: var(--cor-ancora);
+    outline: none;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container-esqueceu-senha a:focus,
+.container-esqueceu-senha a:hover,
+.container-esqueceu-senha a:visited {
+    text-decoration: underline;
+}
+
+.formulario-esqueceu-senha {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-esqueceu-senha input,
+.formulario-esqueceu-senha button {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+.formulario-esqueceu-senha input {
+    border: var(--cor-input);
+    box-shadow: var(--sombra-input);
+    outline: none;
+}
+
+.formulario-esqueceu-senha input:focus {
+    border: var(--cor-input-foco);
+    box-shadow: var(--sombra-input-foco);
+}
+
+.formulario-esqueceu-senha button {
+    background: var(--cor-botao-principal);
+    border: none;
+    box-shadow: var(--sombra-botao);
+    color: var(--cor-fonte-branca);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .05s;
+    outline: none;
+}
+
+.formulario-esqueceu-senha button:focus, .formulario-esqueceu-senha button:hover {
+    background: var(--cor-botao-principal-foco);
+    border: none;
+    box-shadow: var(--sombra-botao-foco);
+}
